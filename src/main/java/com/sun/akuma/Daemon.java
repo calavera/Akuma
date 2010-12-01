@@ -135,9 +135,9 @@ public class Daemon {
         closeDescriptors();
 
         // restrict the creation mode to 750 (octal)
-        LIBC.umask(0027);
+        //LIBC.umask(0027);
 
-        chdirToRoot();
+        //chdirToRoot();
         if (pidFile != null) writePidFile(pidFile);
     }
 
